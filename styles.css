@@ -1,0 +1,32 @@
+body {
+    background-color: #f8f9fa;
+    /* background-image: linear-gradient(to left,red,cyan,yellow,green); */
+    background-image: url(nalanda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+label{
+    text-decoration: underline;
+    background-color: rgb(235, 208, 208);
+    color: rgb(12, 12, 12);
+}
