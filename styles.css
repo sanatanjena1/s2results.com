@@ -1,7 +1,28 @@
+/* heading part start */
+body {
+    padding-top: 80px; /* Adjusted for fixed navbar */
+  }
+  #nav1{
+      height: 90px;
+  }
+#timg,#img1,#head1{
+  float: left;
+  margin-left: 10px;
+}
+#head1{
+  font-weight: 700;
+  margin: 22px;
+}
+
 body {
     background-color: #f8f9fa;
     /* background-image: linear-gradient(to left,red,cyan,yellow,green); */
-    background-image: url(nalanda.jpg);
+
+
+
+
+    /* body img */
+    /* background-image: url(nalanda.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,6 +48,51 @@ h1 {
 }
 label{
     text-decoration: underline;
-    background-color: rgb(235, 208, 208);
+    background-color: rgb(235, 228, 228);
     color: rgb(12, 12, 12);
+}
+
+/* dropdown-menu start */
+.a,.nav-link:hover{
+    /* border: solid 1px #f0f0f0; */
+    /* border-radius: 20px; */
+    text-decoration: underline;
+    background-color: rgb(134, 118, 118);
+    border-radius: 12px;
+    
+}
+/* teacher */
+
+
+
+#divemi{
+    background-color: rgb(204, 13, 13);
+    width: 200px;
+    height: 40px;
+    float: left;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    margin-top: 20px;
+}
+#scroll{
+    /* background-color: #f5f5f5; */
+    width: 1149px;
+    height: 120px;
+    float: left;
+    margin-top: 20px;
+}
+.bankli{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* autod */
+.nav-item dropdown:hover .dropdown-menu{
+    display: block;
 }

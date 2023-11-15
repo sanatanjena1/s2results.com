@@ -6,24 +6,179 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Student Results</title>
+
+
+    <!-- dp -->
+    <style>
+      .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      </style>
+    
+
+
 </head>
 <body>
-    <!-- <div id="container-fluid"> -->
+
+     <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="nav1">
+    <a class="navbar-brand" href="https://www.thenalanda.com/" id="timg">
+      <img src="clgimg/nitlog.jpg" alt="College Logo" width="120px" height="80px" class="d-inline-block align-top" id="img1">
+       <h4 id="head1">Nalanda Institute of Technology [NIT], BBSR</h4>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Branch-MCA <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Batch - 2023-2024</a>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+            <!-- <button class="dropbtn">Dropdown</button> -->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Top 10 Student
+              
+              
+             </a>
+            <div class="dropdown-content">
+              <a class="dropdown-item" href="#">1st Semester</a>
+            <a class="dropdown-item" href="#">2nd Semester</a>
+            <a class="dropdown-item" href="#" hidden>3rd Semester</a>
+            <a class="dropdown-item" href="#" hidden>4th Semester</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Semester List
+          </a>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="#">First Semester List</a>
+            <a class="dropdown-item" href="/secondmlist/d4.html" target="_blank">Second Semester List</a>
+          
+          </div>
+        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+        <!-- result part start -->
     <div class="container">
-        <h1 class="text-center">Student Results</h1>
+        <!-- result section -->
+        <h1 class="text-center">MCA Student Results</h1>
         <div class="result-container">
             <!-- Student results will be displayed here -->
             
         </div>
         <label for="student-id">Student Registration Number (2205297001 - 2205297155):</label>
         <div class="input-group mb-3">
-            <input type="number" id="registrationInput" class="form-control" value="2205297001" placeholder="Enter Registration Number">
+            <input type="number" id="registrationInput" autofocus  class="form-control" placeholder="Enter Registration Number">
             <div class="input-group-append">
                 <button class="btn btn-primary" id="searchButton">Search</button>
             </div>
         </div>
     </div>
   </div>
+
+  <!-- teachers -->
+  <div id="main3">
+    <div id="divemi">Available EMIs</div>
+    <div id="scroll">
+      <!-- <marquee behavior="scroll" direction="left" scrollamount="auto"> -->
+          <ul class="bankli">
+              <marquee behavior="scroll" direction="left" scrollamount="3.4">
+                  <img src="clgimg/Pksir.png" alt="" width="90px" height="100px">  
+              </marquee>
+              <marquee behavior="scroll" direction="left" scrollamount="3.5">
+                  <img src="clgimg/Pmaam.png" alt="" width="90px" height="100px">  
+              </marquee>
+              <marquee behavior="scroll" direction="left" scrollamount="3.8">
+                  <img src="clgimg/Psir.png" alt="" width="90px" height="100px">  
+              </marquee>
+              <marquee behavior="scroll" direction="left" scrollamount="4.50">
+                  <img src="clgimg/Gsir.png" alt="" width="90px" height="100px">  
+              </marquee>
+              <marquee behavior="scroll" direction="left" scrollamount="4.50">
+                <img src="clgimg/Nsir.png" alt="" width="90px" height="100px">  
+            </marquee>
+              <marquee behavior="scroll" direction="left" scrollamount="4.8">
+                  <img src="clgimg/Ssirp.png" alt="" width="90px" height="100px">  
+              </marquee>
+              <marquee behavior="scroll" direction="left" scrollamount="4.8">
+                <img src="clgimg/Spsir.png" alt="" width="90px" height="100px">  
+            </marquee>
+          </ul>
+      </marquee>
+    </div>
+    </div>
+      <!-- Add more images here -->
+    </div>
+  </div>
+
+
+
+
+
+  <!-- aud -->
+
+ 
+
+
     <script src="scripts.js"></script>
+
+
+
+     <!-- Content goes here -->
+
+  <!-- JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
 </body>
 </html>
